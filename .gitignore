@@ -1,0 +1,5 @@
+trainset_full/
+testset_full/
+
+cnn_mnist
+*.bin
