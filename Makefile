@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -O2 -std=c99
 LDFLAGS = -ljpeg -lm
 
 # Source files
-SOURCES = main.c cnn.c
+SOURCES = main.c memory_utils.c activation.c layers.c image_processing.c metrics.c model_io.c training.c cnn_core.c
 OBJECTS = $(SOURCES:.c=.o)
 TARGET = cnn_mnist
 

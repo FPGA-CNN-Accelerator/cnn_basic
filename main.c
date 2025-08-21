@@ -1,4 +1,7 @@
-#include "cnn.h"
+#include "cnn_types.h"
+#include "cnn_core.h"
+#include "training.h"
+#include "model_io.h"
 #include <time.h>
 
 int main() {
@@ -15,10 +18,8 @@ int main() {
         load_model(&cnn, model_filename);
         printf("model loaded\n");
     } else {
-        // 이친구들도헤더파일로분리할까하다가너무나눠지는느낌이라하드코딩을
-        // 실제 학습 할 때는 에폭 넉넉하게 + 러닝레이트 반토막
-        int epochs = 20;
-        float learning_rate = 0.005;
+        int epochs = EPOCHS;
+        float learning_rate = LEARNING_RATE;
             
         printf("epoch: %d | learning rate: %.4f\n", epochs, learning_rate);
         

@@ -3,3 +3,5 @@ testset_full/
 
 cnn_mnist
 *.bin
+
+*.o
